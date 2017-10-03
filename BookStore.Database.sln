@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Database", "BookStore.Database.csproj", "{7E1B7C2F-A2B9-421A-8817-3D43BBDFD5B7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E8B59D39-1A33-4AFA-B218-CA2FB35217D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStore.Database.Launcher", "src\BookStore.Database.Launcher\BookStore.Database.Launcher.csproj", "{425A6992-40FA-4612-A518-93CFF2051E19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +13,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7E1B7C2F-A2B9-421A-8817-3D43BBDFD5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7E1B7C2F-A2B9-421A-8817-3D43BBDFD5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7E1B7C2F-A2B9-421A-8817-3D43BBDFD5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E1B7C2F-A2B9-421A-8817-3D43BBDFD5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{425A6992-40FA-4612-A518-93CFF2051E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{425A6992-40FA-4612-A518-93CFF2051E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{425A6992-40FA-4612-A518-93CFF2051E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{425A6992-40FA-4612-A518-93CFF2051E19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{425A6992-40FA-4612-A518-93CFF2051E19} = {E8B59D39-1A33-4AFA-B218-CA2FB35217D3}
 	EndGlobalSection
 EndGlobal
