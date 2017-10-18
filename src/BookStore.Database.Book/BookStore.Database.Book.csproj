@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{425A6992-40FA-4612-A518-93CFF2051E19}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{7285FC71-5465-42C0-BCFC-C1C415171FFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BookStore.Database.Launcher</RootNamespace>
-    <AssemblyName>BookStore.Database.Launcher</AssemblyName>
+    <RootNamespace>BookStore.Database.Book</RootNamespace>
+    <AssemblyName>BookStore.Database.Book</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,14 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="dbup-core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=4b419c53bdfd4cbf, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\dbup-core.4.0.0-beta0002\lib\net35\dbup-core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="dbup-sqlserver, Version=4.0.0.0, Culture=neutral, PublicKeyToken=4b419c53bdfd4cbf, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\dbup-sqlserver.4.0.0-beta0002\lib\net35\dbup-sqlserver.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,26 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BookStore.Database.Basket\BookStore.Database.Basket.csproj">
-      <Project>{333277d6-8c12-40ef-8f60-053dc330fd3a}</Project>
-      <Name>BookStore.Database.Basket</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BookStore.Database.Book\BookStore.Database.Book.csproj">
-      <Project>{7285fc71-5465-42c0-bcfc-c1c415171ffe}</Project>
-      <Name>BookStore.Database.Book</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BookStore.Database.IdentityServer\BookStore.Database.IdentityServer.csproj">
-      <Project>{406e4cc8-eb73-417a-b1f2-fcd8be8c19ed}</Project>
-      <Name>BookStore.Database.IdentityServer</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
