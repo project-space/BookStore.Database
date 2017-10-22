@@ -7,8 +7,8 @@
     <ProjectGuid>{333277D6-8C12-40EF-8F60-053DC330FD3A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BookStore.Database.Basket</RootNamespace>
-    <AssemblyName>BookStore.Database.Basket</AssemblyName>
+    <RootNamespace>BookStore.Database.Purchase</RootNamespace>
+    <AssemblyName>BookStore.Database.Purchase</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,6 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\2017\00000 - create basket table.sql" />
+    <Content Include="Scripts\2017\00001 - create basket item table.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

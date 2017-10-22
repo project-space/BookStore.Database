@@ -8,17 +8,17 @@ namespace BookStore.Database.Launcher
     {
         static string identityConnectionString =   @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BookStore.IdentityServer;Integrated Security=True;";
         static string bookConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BookStore.Book;Integrated Security=True;";
-        static string basketConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BookStore.Basket;Integrated Security=True;";
+        static string purchaseConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BookStore.Purchase;Integrated Security=True;";
 
         static Assembly identityServerAssembly = Assembly.Load("BookStore.Database.IdentityServer");
         static Assembly bookAssembly = Assembly.Load("BookStore.Database.Book");
-        static Assembly basketAssembly = Assembly.Load("BookStore.Database.Basket");
+        static Assembly purchaseAssembly = Assembly.Load("BookStore.Database.Purchase");
 
         static void Main(string[] args)
         {
             RunMigrations(identityConnectionString, identityServerAssembly);
             RunMigrations(bookConnectionString, bookAssembly);
-            RunMigrations(basketConnectionString, basketAssembly);
+            RunMigrations(purchaseConnectionString, purchaseAssembly);
         }
 
         static void RunMigrations (string connectionString, Assembly assemblyWithScripts)

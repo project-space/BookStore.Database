@@ -59,10 +59,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BookStore.Database.Basket\BookStore.Database.Basket.csproj">
-      <Project>{333277d6-8c12-40ef-8f60-053dc330fd3a}</Project>
-      <Name>BookStore.Database.Basket</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BookStore.Database.Book\BookStore.Database.Book.csproj">
       <Project>{7285fc71-5465-42c0-bcfc-c1c415171ffe}</Project>
       <Name>BookStore.Database.Book</Name>
@@ -70,6 +66,10 @@
     <ProjectReference Include="..\BookStore.Database.IdentityServer\BookStore.Database.IdentityServer.csproj">
       <Project>{406e4cc8-eb73-417a-b1f2-fcd8be8c19ed}</Project>
       <Name>BookStore.Database.IdentityServer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BookStore.Database.Purchase\BookStore.Database.Purchase.csproj">
+      <Project>{333277d6-8c12-40ef-8f60-053dc330fd3a}</Project>
+      <Name>BookStore.Database.Purchase</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
