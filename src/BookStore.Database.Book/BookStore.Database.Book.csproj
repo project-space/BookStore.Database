@@ -46,6 +46,9 @@
     <EmbeddedResource Include="Scripts\2017\00000 - create book table.sql" />
     <EmbeddedResource Include="Scripts\2017\00001 - create rating table.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017\00002 - alter book table.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
