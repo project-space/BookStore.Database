@@ -43,8 +43,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\2017\00000 - create basket table.sql" />
-    <Content Include="Scripts\2017\00001 - create basket item table.sql" />
+    <EmbeddedResource Include="Scripts\2017\00000 - create cart table.sql" />
+    <EmbeddedResource Include="Scripts\2017\00001 - create cart item table.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
