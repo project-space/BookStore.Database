@@ -1,0 +1,1 @@
+﻿alter table Book add GenreId int not null
