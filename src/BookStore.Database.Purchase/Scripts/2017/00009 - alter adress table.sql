@@ -1,0 +1,1 @@
+﻿alter table Adress alter column Apartment varchar(5)

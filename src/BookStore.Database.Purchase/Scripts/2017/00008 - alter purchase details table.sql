@@ -1,0 +1,1 @@
+﻿alter table PurchaseDetails drop column PurchaseId;
