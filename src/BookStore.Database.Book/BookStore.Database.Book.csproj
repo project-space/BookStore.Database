@@ -56,9 +56,15 @@
     <EmbeddedResource Include="Scripts\2017\00004 - rename table rating to grade.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Scripts\2017\00005 - add view rating book.sql" />
-    <EmbeddedResource Include="Scripts\2017\00007 - add genreId column to book table.sql" />
+    <EmbeddedResource Include="Scripts\2017\00007 - add view rating book.sql" />
+    <EmbeddedResource Include="Scripts\2017\00005 - add genreId column to book table.sql" />
     <EmbeddedResource Include="Scripts\2017\00006 - create genre table.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017\00008 - add foreign key to book table.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017\00009 - add foreign key to grade table.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

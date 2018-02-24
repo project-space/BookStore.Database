@@ -70,6 +70,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Scripts\2017\00009 - alter adress table.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017\00010 - add foreign key to purchase table.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017\00011 - add foreign key to purchase_details table.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017\00012 - add foreign key to purchase_item  table.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Scripts\2017\00013 - add foreign key to cart_item table.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
