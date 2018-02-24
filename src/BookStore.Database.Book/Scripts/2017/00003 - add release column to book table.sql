@@ -1,1 +1,1 @@
-﻿ALTER table Book ADD ReleaseDate datetime  not null
+﻿ALTER table Book ADD ReleaseDate date  not null
